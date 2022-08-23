@@ -22,7 +22,7 @@ public class Reto05 {
         int height = image.getHeight();
         int width = image.getWidth();
 
-        int ratio = MCM(height, width);
+        int ratio = MCD(height, width);
 
         String widthRatio = String.valueOf(ratio / height);
         String heightRatio = String.valueOf(ratio / width);
@@ -31,7 +31,7 @@ public class Reto05 {
                 .toString();
     }
 
-    private int MCM(int num, int num2) {
+    private int MCD(int num, int num2) {
         if (num == 0 || num2 == 0) {
             return 0;
         }
@@ -42,12 +42,12 @@ public class Reto05 {
         int absHigher = Math.max(abs1, abs2);
         int absLower = Math.min(abs1, abs2);
 
-        int mcm = absHigher;
+        int mcd = absHigher;
 
-        while (mcm % absLower != 0) {
-            mcm += absHigher;
+        while (mcd % absLower != 0) {
+            mcd += absHigher;
         }
 
-        return mcm;
+        return mcd;
     }
 }
