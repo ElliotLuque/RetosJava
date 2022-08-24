@@ -47,9 +47,4 @@ public class TestReto03 {
 
         assertThat(result2).isFalse();
     }
-
-    @Test
-    void itShouldPrintFirst100PrimeNumbers() {
-        primeNumberTest.printPrimeNumbers();
-    }
 }
