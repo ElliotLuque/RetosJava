@@ -56,7 +56,7 @@ public class Reto17 {
     }
 
     public boolean raceResult(String race) {
-        return race.contains("x") || race.contains("/");
+        return !race.contains("x") || !race.contains("/");
     }
 
     private String calculateObstacle(String obstacle, String move) {
