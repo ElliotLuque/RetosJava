@@ -16,26 +16,44 @@ public class TestReto08 {
     void itShouldConvertToBinary() {
         int decimal = 170;
 
-        String result = binaryConverterTest.convertToBinary(decimal);
+        long result = binaryConverterTest.convertToBinary(decimal);
 
-        assertThat(result).isEqualTo("10101010");
+        assertThat(result).isEqualTo(10101010);
     }
 
     @Test
     void itShouldConvertToBinary2() {
         int decimal = 15;
 
-        String result = binaryConverterTest.convertToBinary(decimal);
+        long result = binaryConverterTest.convertToBinary(decimal);
 
-        assertThat(result).isEqualTo("1111");
+        assertThat(result).isEqualTo(1111);
+    }
+
+    @Test
+    void itShouldConvertToBinary3() {
+        int decimal = 0;
+
+        long result = binaryConverterTest.convertToBinary(decimal);
+
+        assertThat(result).isEqualTo(0);
+    }
+
+    @Test
+    void itShouldConvertToBinary4() {
+        int decimal = 4;
+
+        long result = binaryConverterTest.convertToBinary(decimal);
+
+        assertThat(result).isEqualTo(100);
     }
 
     @Test
     void itShouldConvertWronglyToBinary() {
         int decimal = 20;
 
-        String result = binaryConverterTest.convertToBinary(decimal);
+        long result = binaryConverterTest.convertToBinary(decimal);
 
-        assertThat(result).isNotEqualTo("22112");
+        assertThat(result).isNotEqualTo(22112);
     }
 }

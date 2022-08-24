@@ -10,21 +10,25 @@ import java.util.List;
  */
 
 public class Reto08 {
-    public String convertToBinary(int decimal) {
+    public long convertToBinary(int decimal) {
 
-        StringBuilder binaryNumber = new StringBuilder();
-        List<Integer> remainderList = new ArrayList<>();
+        if (decimal == 0) {
+            return 0L;
+        }
+
+        StringBuilder binaryNumberString = new StringBuilder();
+        List<Long> remainderList = new ArrayList<>();
 
         while (decimal > 0) {
-            int remainder = decimal % 2;
+            long remainder = decimal % 2;
             decimal = decimal / 2;
 
             remainderList.add(remainder);
         }
 
         Collections.reverse(remainderList);
-        remainderList.forEach(binaryNumber::append);
+        remainderList.forEach(binaryNumberString::append);
 
-        return binaryNumber.toString();
+        return Long.parseLong(binaryNumberString.toString());
     }
 }
