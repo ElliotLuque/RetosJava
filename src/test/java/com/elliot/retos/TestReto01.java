@@ -31,4 +31,12 @@ public class TestReto01 {
 
         assertThat(anagramTest.isAnagram(word1, word2)).isFalse();
     }
+
+    @Test
+    void itShouldNotBeAnagram2() {
+        String word1 = "blue";
+        String word2 = "blue";
+
+        assertThat(anagramTest.isAnagram(word1, word2)).isFalse();
+    }
 }
