@@ -15,7 +15,7 @@ public class TestReto16 {
     Reto16 firstLetterUppercaseTest = new Reto16();
 
     @Test
-    void itShouldGiveFirstUppercase() {
+    void itShouldGiveFirstUppercaseString() {
         String text = "hola mundo que tal";
 
         String result = firstLetterUppercaseTest.uppercaseFirst(text);
@@ -24,7 +24,7 @@ public class TestReto16 {
     }
 
     @Test
-    void itShouldFailToGiveFirstUppercase() {
+    void itShouldFailToGiveFirstUppercaseString() {
         String text = "buenas tardes tardes";
 
         String result = firstLetterUppercaseTest.uppercaseFirst(text);
