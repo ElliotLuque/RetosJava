@@ -44,9 +44,4 @@ public class TestReto00 {
 
         assertThat(result).isEqualTo("2");
     }
-
-    @Test
-    void itShouldPrintFizzBuzz() {
-        fizzbuzzTest.printFizzBuzz();
-    }
 }
