@@ -35,4 +35,4 @@ jobs:
           filename: badge.json
           label: challenges
           message: "${{ steps.done.outputs.doneChallenges }}" / "${{ steps.total.outputs.challengeNumber }}"
-          color: orange
+          color: green
