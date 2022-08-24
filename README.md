@@ -26,7 +26,7 @@ Se pueden encontrar soluciones a los retos en los repositorios de MoureDev:
 ## Reto actual
 
 ### Nº 34: LOS NÚMEROS PERDIDOS
-***FÁCIL** / Fecha de publicación: 22/08/2022 / Resolución: 29/08/2022*
+***FÁCIL** | Fecha de publicación: 22/08/2022 | Resolución: 29/08/2022*
 
 ````
 /*
