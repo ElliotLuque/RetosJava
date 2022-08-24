@@ -42,13 +42,4 @@ public class TestReto14 {
 
         assertThat(result).isFalse();
     }
-
-    @Test
-    void itShouldNotBeArmstrong2() {
-        int num = 10;
-
-        boolean result = armstrongTest.isArmstrong(num);
-
-        assertThat(result).isFalse();
-    }
 }
