@@ -16,8 +16,16 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
 
-      - name: Count challenges
-        run: ls src/main/java/com/elliot/retos | wc -l
+      - name: Count done challenges
+        id: done
+        run: >-
+            echo "::set-output name=doneChallenges::$(
+              ls src/main/java/com/elliot/retos | wc -l
+          )"
+
+      - name: Count number of challenges
+        id: total
+        uses: ElliotLuque/check-number-of-current-mouredev-challenge@master
 
       - name: Generate badge from gist
         uses: schneegans/dynamic-badges-action@v1.4.0
@@ -26,5 +34,5 @@ jobs:
           gistID: 877b28319e86c7acc17d3116177a6a04
           filename: badge.json
           label: challenges
-          message: 18/34
+          message: "${{ steps.done.outputs.doneChallenges }}" / "${{ steps.total.outputs.challengeNumber }}"
           color: orange
