@@ -33,9 +33,4 @@ public class TestReto02 {
 
         assertThat(result).isEqualTo(6765);
     }
-
-    @Test
-    void itShouldPrintFirst20Fibonacci(){
-        fibonacciTest.printFibonacciSequence(20);
-    }
 }
