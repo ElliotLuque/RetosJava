@@ -26,7 +26,7 @@ public class Reto18 {
             return "X";
         }
 
-        if (findWinDiagonal(board, 1, "X") || findWinDiagonal(board, 2, "O")) {
+        if (findWinDiagonal(board, 1, "O") || findWinDiagonal(board, 2, "O")) {
             return "O";
         }
 
