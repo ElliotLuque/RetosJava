@@ -23,9 +23,9 @@ Se pueden encontrar soluciones a los retos en los repositorios de MoureDev:
 - **[Swift](https://github.com/mouredev/Weekly-Challenge-2022-Swift)**
 
 
-## Reto actual
+## Reto de la semana
 
-### Nº 34: LOS NÚMEROS PERDIDOS
+### # 34: LOS NÚMEROS PERDIDOS
 ***FÁCIL** | Fecha de publicación: 22/08/2022 | Resolución: 29/08/2022*
 
 ````
