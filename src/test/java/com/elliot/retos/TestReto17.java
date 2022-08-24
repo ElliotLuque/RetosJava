@@ -1,6 +1,8 @@
 package com.elliot.retos;
 
 import static org.assertj.core.api.Assertions.assertThat;
+import static org.assertj.core.api.Assertions.assertThatThrownBy;
+
 import org.junit.jupiter.api.Test;
 
 /*
@@ -48,5 +50,38 @@ public class TestReto17 {
 
         assertThat(completed).isFalse();
         System.out.println("Race result: " + result);
+    }
+
+    @Test
+    void itShouldThrowExceptionForInvalidRaceCourse() {
+        String race = "_||a_b";
+        String[] movements = {"jump", "jump", "run", "run", "jump", "run"};
+
+        assertThatThrownBy(() -> {
+            raceTest.race(movements, race);
+        }).isInstanceOf(IllegalArgumentException.class)
+                .hasMessageContaining("Race inputs must be well formed... ( '|' = jump, '_' = run )");
+    }
+
+    @Test
+    void itShouldThrowExceptionForInvalidRaceMovements() {
+        String race = "|__||_";
+        String[] movements = {"hola", "jump", "a", "run", "b", "adios"};
+
+        assertThatThrownBy(() -> {
+            raceTest.race(movements, race);
+        }).isInstanceOf(IllegalArgumentException.class)
+                .hasMessageContaining("Race inputs must be well formed... ( '|' = jump, '_' = run )");
+    }
+
+    @Test
+    void itShouldThrowExceptionForNumberOfMovements() {
+        String race = "|__||_|";
+        String[] movements = {"jump", "jump", "run", "run", "jump", "run", "jump", "run", "run", "run", "run"};
+
+        assertThatThrownBy(() -> {
+            raceTest.race(movements, race);
+        }).isInstanceOf(IllegalArgumentException.class)
+                .hasMessageContaining("There must be the same number of obstacles and moves...");
     }
 }

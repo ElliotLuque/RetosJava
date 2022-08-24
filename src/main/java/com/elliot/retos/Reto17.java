@@ -23,12 +23,11 @@ import java.util.List;
 
 public class Reto17 {
     public String race(String[] movements, String course) {
-
         if (movements.length != course.length()) {
             throw new IllegalArgumentException("There must be the same number of obstacles and moves...");
         }
 
-        if (!checkRaceInput(course) && !checkMovementsInput(movements)) {
+        if (!checkRaceInput(course) || !checkMovementsInput(movements)) {
             throw new IllegalArgumentException("Race inputs must be well formed... ( '|' = jump, '_' = run )");
         }
 
