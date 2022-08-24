@@ -26,7 +26,7 @@ public class TestReto04 {
     }
 
     @Test
-    void itShouldNotGiveRectangleArea() {
+    void itShouldGiveWrongRectangleArea() {
         double result = rectangle.calculateArea();
 
         assertThat(result).isNotEqualTo(5.125255);
@@ -40,7 +40,7 @@ public class TestReto04 {
     }
 
     @Test
-    void itShouldNotGiveTriangleArea() {
+    void itShouldGiveWrongTriangleArea() {
         double result = triangle.calculateArea();
 
         assertThat(result).isNotEqualTo(1250);
@@ -54,21 +54,9 @@ public class TestReto04 {
     }
 
     @Test
-    void itShouldNotGiveSquareArea() {
+    void itShouldGiveWrongSquareArea() {
         double result = square.calculateArea();
 
         assertThat(result).isNotEqualTo(7.25);
-    }
-
-    @Test
-    void itShouldPrintPolygonAreas() {
-        Rectangle rectangle = new Rectangle(10.0,5.5);
-        Triangle triangle = new Triangle(5,20);
-        Square square = new Square(2.3);
-
-        printAreaTests.printPolygonArea(rectangle);
-        printAreaTests.printPolygonArea(triangle);
-        printAreaTests.printPolygonArea(square);
-
     }
 }
