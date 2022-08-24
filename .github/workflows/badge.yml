@@ -1,0 +1,21 @@
+name: Generate badge
+
+on:
+  schedule:
+    - cron: '0 1 * * *'
+
+jobs:
+  generate-badge:
+    name: Generate badge based on current challenge
+    runs-on: ubuntu-22.04
+
+    steps:
+      - name: Create challenge badge
+        uses: schneegans/dynamic-badges-action@v1.4.0
+        with:
+          auth: ${{ secrets.GIST_SECRET }}
+          gistID: 877b28319e86c7acc17d3116177a6a04
+          filename: badge.json
+          label: challenges
+          message: 18/34
+          color: orange
