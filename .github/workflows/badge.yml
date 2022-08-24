@@ -18,10 +18,7 @@ jobs:
 
       - name: Count done challenges
         id: done
-        run: >-
-            echo "::set-output name=doneChallenges::$(
-              ls src/main/java/com/elliot/retos | wc -l
-          )"
+        run: echo "::set-output name=doneChallenges::$(ls src/main/java/com/elliot/retos | wc -l)"
 
       - name: Count number of challenges
         id: total
