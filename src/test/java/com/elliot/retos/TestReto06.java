@@ -14,7 +14,7 @@ public class TestReto06 {
     Reto06 reverseStringTest = new Reto06();
 
     @Test
-    void itShouldReverseString() {
+    void itShouldGiveReversedString() {
         String reverse = "Hola mundo";
 
         String result = reverseStringTest.reverseString(reverse);
@@ -23,7 +23,7 @@ public class TestReto06 {
     }
 
     @Test
-    void itShouldNotReverseString() {
+    void itShouldGiveWrongReversedString() {
         String reverse = "Hola mundo";
 
         String result = reverseStringTest.reverseString(reverse);
