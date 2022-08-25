@@ -31,6 +31,9 @@ jobs:
     needs: build-test
 
     steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
       - name: Test reports
         uses: dorny/test-reporter@v1.5.0
         if: always()
