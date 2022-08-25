@@ -26,6 +26,7 @@ jobs:
 
 
   report:
+    name: Report results
     runs-on: ubuntu-22.04
     needs: build-test
 
