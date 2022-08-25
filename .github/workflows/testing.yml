@@ -23,3 +23,10 @@ jobs:
 
       - name: Test
         run: mvn --batch-mode --update-snapshots verify
+
+      - name: Upload artifact
+        uses: actions/upload-artifact@v3
+        if: success() || failure()
+        with:
+          name: test-results
+          path: junit.xml
