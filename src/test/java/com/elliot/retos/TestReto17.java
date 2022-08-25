@@ -36,7 +36,6 @@ public class TestReto17 {
         boolean completed = raceTest.raceResult(result);
 
         assertThat(completed).isTrue();
-        System.out.println("Race result: " + result);
     }
 
     @Test
@@ -49,7 +48,6 @@ public class TestReto17 {
         boolean completed = raceTest.raceResult(result);
 
         assertThat(completed).isFalse();
-        System.out.println("Race result: " + result);
     }
 
     @Test
@@ -57,9 +55,7 @@ public class TestReto17 {
         String race = "_||a_b";
         String[] movements = {"jump", "jump", "run", "run", "jump", "run"};
 
-        assertThatThrownBy(() -> {
-            raceTest.race(movements, race);
-        }).isInstanceOf(IllegalArgumentException.class)
+        assertThatThrownBy(() -> raceTest.race(movements, race)).isInstanceOf(IllegalArgumentException.class)
                 .hasMessageContaining("Race inputs must be well formed... ( '|' = jump, '_' = run )");
     }
 
@@ -68,9 +64,7 @@ public class TestReto17 {
         String race = "|__||_";
         String[] movements = {"hola", "jump", "a", "run", "b", "adios"};
 
-        assertThatThrownBy(() -> {
-            raceTest.race(movements, race);
-        }).isInstanceOf(IllegalArgumentException.class)
+        assertThatThrownBy(() -> raceTest.race(movements, race)).isInstanceOf(IllegalArgumentException.class)
                 .hasMessageContaining("Race inputs must be well formed... ( '|' = jump, '_' = run )");
     }
 
@@ -79,9 +73,7 @@ public class TestReto17 {
         String race = "|__||_|";
         String[] movements = {"jump", "jump", "run", "run", "jump", "run", "jump", "run", "run", "run", "run"};
 
-        assertThatThrownBy(() -> {
-            raceTest.race(movements, race);
-        }).isInstanceOf(IllegalArgumentException.class)
+        assertThatThrownBy(() -> raceTest.race(movements, race)).isInstanceOf(IllegalArgumentException.class)
                 .hasMessageContaining("There must be the same number of obstacles and moves...");
     }
 }
