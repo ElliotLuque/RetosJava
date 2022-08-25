@@ -22,7 +22,7 @@ jobs:
 
       - name: Count number of challenges
         id: total
-        uses: ElliotLuque/check-number-of-current-mouredev-challenge@master
+        uses: ElliotLuque/check-number-of-current-mouredev-challenge@v1
 
       - name: Calculate color of badge
         id: color
