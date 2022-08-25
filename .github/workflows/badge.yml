@@ -31,5 +31,5 @@ jobs:
           gistID: 877b28319e86c7acc17d3116177a6a04
           filename: badge.json
           label: challenges
-          message: "${{ steps.done.outputs.doneChallenges }}" / "${{ steps.total.outputs.challengeNumber }}"
+          message: 3 / 2
           color: green
