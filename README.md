@@ -2,6 +2,7 @@
 
 # Retos de programación semanales 2022
 
+
 Proyecto de retos semanales de la comunidad **[MoureDev](https://moure.dev)** 
 para practicar lógica de programación.
 
@@ -11,9 +12,13 @@ Todos los retos en **[retosdeprogramacion.com/semanales2022](https://retosdeprog
 ![license-badge]
 ![challenge-badge]
 
+
+
 </div>
 
-## Información
+
+## ℹ Información
+
 
 Cada semana se publicará un reto en la web, se podrá resolver con **cualquier lenguaje**, en este caso se han resuelto con **Java**
 
@@ -23,17 +28,24 @@ Se pueden encontrar soluciones a los retos en los repositorios de MoureDev:
 - **[Swift](https://github.com/mouredev/Weekly-Challenge-2022-Swift)**
 
 
-## Reto de la semana
+## 🏆 Reto de la semana
 
-### # 34: LOS NÚMEROS PERDIDOS
-***FÁCIL** | Fecha de publicación: 22/08/2022 | Resolución: 29/08/2022*
+### # 35: BATALLA POKÉMON
+***MEDIA** | Fecha de publicación: 29/08/2022 | Resolución: 06/09/2022*
 
 ````
 /*
- * Enunciado: Dado un array de enteros ordenado y sin repetidos, 
- * crea una función que calcule y retorne todos los que faltan entre
- * el mayor y el menor.
- * - Lanza un error si el array de entrada no es correcto.
+ * Enunciado: Crea un programa que calcule el daño de un ataque durante
+ * una batalla Pokémon.
+ * - La fórmula será la siguiente: daño = 50 * (ataque / defensa) * efectividad
+ * - Efectividad: x2 (súper efectivo), x1 (neutral), x0.5 (no es muy efectivo)
+ * - Sólo hay 4 tipos de Pokémon: Agua, Fuego, Planta y Eléctrico 
+ *   (buscar su efectividad)
+ * - El programa recibe los siguientes parámetros:
+ *  - Tipo del Pokémon atacante.
+ *  - Tipo del Pokémon defensor.
+ *  - Ataque: Entre 1 y 100.
+ *  - Defensa: Entre 1 y 100.
  */
 ````
 
