@@ -49,6 +49,6 @@ Se pueden encontrar soluciones a los retos en los repositorios de MoureDev:
  */
 ````
 
-[build-badge]: https://img.shields.io/github/workflow/status/ElliotLuque/retos-java-2022/Testing
+[build-badge]: https://github.com/ElliotLuque/retos-java-2022/actions/workflows/testing.yml/badge.svg
 [license-badge]: https://img.shields.io/github/license/ElliotLuque/retos-java-2022
 [challenge-badge]: https://img.shields.io/endpoint?url=https://gist.githubusercontent.com/ElliotLuque/877b28319e86c7acc17d3116177a6a04/raw/badge.json
