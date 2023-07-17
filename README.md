@@ -30,7 +30,7 @@ Se pueden encontrar soluciones a los retos en los repositorios de MoureDev:
 
 ## 🏆 Reto de la semana
 
-### # 35: EL RETO RANDOM
+### # 51: EL RETO RANDOM
 ***FÁCIL** | Fecha de publicación: 19/12/2022 | Resolución: 26/12/2022*
 
 ````
