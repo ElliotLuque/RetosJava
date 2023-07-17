@@ -30,22 +30,16 @@ Se pueden encontrar soluciones a los retos en los repositorios de MoureDev:
 
 ## 🏆 Reto de la semana
 
-### # 35: BATALLA POKÉMON
-***MEDIA** | Fecha de publicación: 29/08/2022 | Resolución: 06/09/2022*
+### # 35: EL RETO RANDOM
+***FÁCIL** | Fecha de publicación: 19/12/2022 | Resolución: 26/12/2022*
 
 ````
 /*
- * Enunciado: Crea un programa que calcule el daño de un ataque durante
- * una batalla Pokémon.
- * - La fórmula será la siguiente: daño = 50 * (ataque / defensa) * efectividad
- * - Efectividad: x2 (súper efectivo), x1 (neutral), x0.5 (no es muy efectivo)
- * - Sólo hay 4 tipos de Pokémon: Agua, Fuego, Planta y Eléctrico 
- *   (buscar su efectividad)
- * - El programa recibe los siguientes parámetros:
- *  - Tipo del Pokémon atacante.
- *  - Tipo del Pokémon defensor.
- *  - Ataque: Entre 1 y 100.
- *  - Defensa: Entre 1 y 100.
+ * Enunciado: Crea tu propio enunciado para que forme parte de los retos de 2023.
+ * - Ten en cuenta que su dificultad debe ser asumible por la comunidad y seguir
+ * un estilosemejante a los que hemos realizado durante el año.
+ * - Si quieres también puedes proponer tu propia solución al reto
+ *   (en el lenguaje que quieras).
  */
 ````
 
