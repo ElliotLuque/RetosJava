@@ -13,7 +13,6 @@ Todos los retos en **[retosdeprogramacion.com/semanales2022](https://retosdeprog
 ![challenge-badge]
 
 
-
 </div>
 
 
